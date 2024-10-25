@@ -1311,7 +1311,7 @@ function RoboticKneeForm() {
           </section>
         )}
 
-        {/* Step 4: Researcher/Surgeon Details */}
+        {/* Step 5: Researcher/Surgeon Details */}
         {currentStep === 5 && (
           <section>
             <h3 className="text-xl font-semibold mb-4">Researcher</h3>
@@ -1352,7 +1352,7 @@ function RoboticKneeForm() {
                       className="input-field-radio"
                       id="kneeFeelSometimes"
                     />
-                    <span>slight</span>
+                    <span>moderate(3)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
@@ -1363,7 +1363,7 @@ function RoboticKneeForm() {
                       className="input-field-radio"
                       id="kneeFeelSometimes"
                     />
-                    <span>moderate</span>
+                    <span>severe(2)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
@@ -1374,7 +1374,7 @@ function RoboticKneeForm() {
                       className="input-field-radio"
                       id="kneeFeelSometimes"
                     />
-                    <span>severe</span>
+                    <span>very severe(1)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
@@ -1385,109 +1385,13 @@ function RoboticKneeForm() {
                       className="input-field-radio"
                       id="kneeFeelSometimes"
                     />
-                    <span>very severe</span>
-                  </label>
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="normalKneeFeel"
-                      value="Sometimes"
-                      onChange={handleChange}
-                      className="input-field-radio"
-                      id="kneeFeelSometimes"
-                    />
-                    <span>I never do this</span>
-                  </label>
-                </div>
-              </div>
-              <div className="mt-6">
-                <h5 className="text-lg font-medium">
-                  3. Do you expect your surgery will help you perform leisure,
-                  recreational, or sports activities?
-                </h5>
-                <div className="flex flex-col space-y-2 mt-2">
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="leisureActivities"
-                      value="1"
-                      onChange={handleChange}
-                      className="input-field-radio"
-                      id="leisure-1"
-                    />
-                    <span>wheelchair (-10 pts)</span>
-                  </label>
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="leisureActivities"
-                      value="2"
-                      onChange={handleChange}
-                      className="input-field-radio"
-                      id="leisure-2"
-                    />
-                    <span>walker (-8 pts)</span>
-                  </label>
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="leisureActivities"
-                      value="3"
-                      onChange={handleChange}
-                      className="input-field-radio"
-                      id="leisure-3"
-                    />
-                    <span>crutches (-8 pts)</span>
-                  </label>
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="leisureActivities"
-                      value="4"
-                      onChange={handleChange}
-                      className="input-field-radio"
-                      id="leisure-4"
-                    />
-                    <span>two canes (-6 pts)</span>
-                  </label>
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="leisureActivities"
-                      value="5"
-                      onChange={handleChange}
-                      className="input-field-radio"
-                      id="leisure-5"
-                    />
-                    <span>one crutch (-4 pts)</span>
-                  </label>
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="leisureActivities"
-                      value="5"
-                      onChange={handleChange}
-                      className="input-field-radio"
-                      id="leisure-5"
-                    />
-                    <span>one cane (-4 pts)</span>
-                  </label>
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="leisureActivities"
-                      value="5"
-                      onChange={handleChange}
-                      className="input-field-radio"
-                      id="leisure-5"
-                    />
-                    <span>knee sleeve / brace (-2 pts)</span>
+                    <span>I never do this(0)</span>
                   </label>
                 </div>
               </div>
               <div className="col-span-1 md:col-span-2 mt-4">
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  3. Do you use these aid(s) because of your knees?
+                  1. Walking on an uneven surface
                 </label>
                 <div className="flex items-center space-x-6">
                   <label className="flex items-center space-x-2">
@@ -1499,7 +1403,7 @@ function RoboticKneeForm() {
                       className="input-field-radio"
                       id="kneeFeelAlways"
                     />
-                    <span>Yes</span>
+                    <span> no bother (5)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
@@ -1510,182 +1414,781 @@ function RoboticKneeForm() {
                       className="input-field-radio"
                       id="kneeFeelSometimes"
                     />
-                    <span>No</span>
+                    <span>slight(4)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>moderate(3)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>severe(2)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>very severe(1)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>I never do this(0)</span>
                   </label>
                 </div>
               </div>
-              <div className="mt-6">
-                <h5 className="text-lg font-medium">
-                  4 - For how long can you stand (with or without aid) before
-                  sitting due to knee discomfort?
-                </h5>
-                <div className="flex flex-col space-y-2 mt-2">
+              <div className="col-span-1 md:col-span-2 mt-4">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  2 - Turning or pivoting on your leg
+                </label>
+                <div className="flex items-center space-x-6">
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="1"
+                      name="normalKneeFeel"
+                      value="Always"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-1"
+                      id="kneeFeelAlways"
                     />
-                    <span>cannot stand (0 pts)</span>
+                    <span> no bother (5)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="2"
+                      name="normalKneeFeel"
+                      value="Sometimes"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-2"
+                      id="kneeFeelSometimes"
                     />
-                    <span>0-5 minutes (3 pts)</span>
+                    <span>slight(4)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="3"
+                      name="normalKneeFeel"
+                      value="Sometimes"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-3"
+                      id="kneeFeelSometimes"
                     />
-                    <span>6-15 minutes (6 pts)</span>
+                    <span>moderate(3)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="4"
+                      name="normalKneeFeel"
+                      value="Sometimes"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-4"
+                      id="kneeFeelSometimes"
                     />
-                    <span>16-30 minutes (9 pts)</span>
+                    <span>severe(2)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="5"
+                      name="normalKneeFeel"
+                      value="Sometimes"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-5"
+                      id="kneeFeelSometimes"
                     />
-                    <span>31-60 minutes (12 pts)</span>
+                    <span>very severe(1)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="5"
+                      name="normalKneeFeel"
+                      value="Sometimes"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-5"
+                      id="kneeFeelSometimes"
                     />
-                    <span>more than an hour (15 pts)</span>
-                  </label>
-                  <label className="flex items-center space-x-2">
-                    <input
-                      type="radio"
-                      name="leisureActivities"
-                      value="5"
-                      onChange={handleChange}
-                      className="input-field-radio"
-                      id="leisure-5"
-                    />
-                    <span>knee sleeve / brace (-2 pts)</span>
+                    <span>I never do this(0)</span>
                   </label>
                 </div>
               </div>
-              <br />
-              <div className="mt-6">
-                <h5 className="text-lg font-medium">
-                  5 - For how long can you walk (with or without aid) before
-                  stopping due to knee discomfort?
-                </h5>
-                <div className="flex flex-col space-y-2 mt-2">
+              <div className="col-span-1 md:col-span-2 mt-4">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  3 - Climbing up or down a flight of stairs
+                </label>
+                <div className="flex items-center space-x-6">
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="1"
+                      name="normalKneeFeel"
+                      value="Always"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-1"
+                      id="kneeFeelAlways"
                     />
-                    <span>cannot stand (0 pts)</span>
+                    <span> no bother (5)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="2"
+                      name="normalKneeFeel"
+                      value="Sometimes"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-2"
+                      id="kneeFeelSometimes"
                     />
-                    <span>0-5 minutes (3 pts)</span>
+                    <span>slight(4)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="3"
+                      name="normalKneeFeel"
+                      value="Sometimes"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-3"
+                      id="kneeFeelSometimes"
                     />
-                    <span>6-15 minutes (6 pts)</span>
+                    <span>moderate(3)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="4"
+                      name="normalKneeFeel"
+                      value="Sometimes"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-4"
+                      id="kneeFeelSometimes"
                     />
-                    <span>16-30 minutes (9 pts)</span>
+                    <span>severe(2)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="5"
+                      name="normalKneeFeel"
+                      value="Sometimes"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-5"
+                      id="kneeFeelSometimes"
                     />
-                    <span>31-60 minutes (12 pts)</span>
+                    <span>very severe(1)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="5"
+                      name="normalKneeFeel"
+                      value="Sometimes"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-5"
+                      id="kneeFeelSometimes"
                     />
-                    <span>more than an hour (15 pts)</span>
+                    <span>I never do this(0)</span>
+                  </label>
+                </div>
+              </div>
+              <div className="col-span-1 md:col-span-2 mt-4">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  4 - Getting up from a low couch or a chair without arms
+                </label>
+                <div className="flex items-center space-x-6">
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Always"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelAlways"
+                    />
+                    <span> no bother (5)</span>
                   </label>
                   <label className="flex items-center space-x-2">
                     <input
                       type="radio"
-                      name="leisureActivities"
-                      value="5"
+                      name="normalKneeFeel"
+                      value="Sometimes"
                       onChange={handleChange}
                       className="input-field-radio"
-                      id="leisure-5"
+                      id="kneeFeelSometimes"
                     />
-                    <span>knee sleeve / brace (-2 pts)</span>
+                    <span>slight(4)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>moderate(3)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>severe(2)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>very severe(1)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>I never do this(0)</span>
+                  </label>
+                </div>
+              </div>
+              <div className="col-span-1 md:col-span-2 mt-4">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  5 - Getting into or out of a car
+                </label>
+                <div className="flex items-center space-x-6">
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Always"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelAlways"
+                    />
+                    <span> no bother (5)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>slight(4)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>moderate(3)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>severe(2)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>very severe(1)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>I never do this(0)</span>
+                  </label>
+                </div>
+              </div>
+              <div className="col-span-1 md:col-span-2 mt-4">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  6 - Moving laterally (stepping to the side)
+                </label>
+                <div className="flex items-center space-x-6">
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Always"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelAlways"
+                    />
+                    <span> no bother (5)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>slight(4)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>moderate(3)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>severe(2)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>very severe(1)</span>
+                  </label>
+                  <label className="flex items-center space-x-2">
+                    <input
+                      type="radio"
+                      name="normalKneeFeel"
+                      value="Sometimes"
+                      onChange={handleChange}
+                      className="input-field-radio"
+                      id="kneeFeelSometimes"
+                    />
+                    <span>I never do this(0)</span>
                   </label>
                 </div>
               </div>
             </div>
+            <br />
+            <h1 className=" text align-center">
+              ADVANCED ACTIVITIES (25 points)
+            </h1>
+            <div className="col-span-1 md:col-span-2 mt-4">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                1 - Climbing a ladder or step stool
+              </label>
+              <div className="flex items-center space-x-6">
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Always"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelAlways"
+                  />
+                  <span>(5)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(4)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(3)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(2)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(1)</span>
+                </label>
+              </div>
+            </div>
+            <div className="col-span-1 md:col-span-2 mt-4">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                1 - Climbing a ladder or step stool
+              </label>
+              <div className="flex items-center space-x-6">
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Always"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelAlways"
+                  />
+                  <span>(5)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(4)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(3)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(2)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(1)</span>
+                </label>
+              </div>
+            </div>
+            <div className="col-span-1 md:col-span-2 mt-4">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                1 - Climbing a ladder or step stool
+              </label>
+              <div className="flex items-center space-x-6">
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Always"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelAlways"
+                  />
+                  <span>(5)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(4)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(3)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(2)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(1)</span>
+                </label>
+              </div>
+            </div>
+            <div className="col-span-1 md:col-span-2 mt-4">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                1 - Climbing a ladder or step stool
+              </label>
+              <div className="flex items-center space-x-6">
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Always"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelAlways"
+                  />
+                  <span>(5)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(4)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(3)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(2)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(1)</span>
+                </label>
+              </div>
+            </div>
+            <div className="col-span-1 md:col-span-2 mt-4">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                1 - Climbing a ladder or step stool
+              </label>
+              <div className="flex items-center space-x-6">
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Always"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelAlways"
+                  />
+                  <span>(5)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(4)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(3)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(2)</span>
+                </label>
+                <label className="flex items-center space-x-2">
+                  <input
+                    type="radio"
+                    name="normalKneeFeel"
+                    value="Sometimes"
+                    onChange={handleChange}
+                    className="input-field-radio"
+                    id="kneeFeelSometimes"
+                  />
+                  <span>(1)</span>
+                </label>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Step 6: Researcher/Surgeon Details */}
+        {currentStep === 6 && (
+          <section>
+            <h3 className="text-xl font-semibold mb-4">Researcher</h3>
+            <div className="container mx-auto p-4">
+              {/* Section for checkbox options */}
+              <div className="mt-6">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Additional Activities (Select any):
+                </label>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                  {[
+                    "Swimming",
+                    "Golfing (18 holes)",
+                    "Road Cycling (>30mins)",
+                    "Gardening",
+                    "Bowling",
+                    "Racquet Sports (Tennis, Racquetball, etc.)",
+                    "Distance Walking",
+                    "Dancing / Ballet",
+                    "Stretching Exercises (stretching out your muscles)",
+                    "Weight-lifting",
+                    "Leg Extensions",
+                    "Stair-Climber",
+                    "Stationary Biking / Spinning",
+                    "Leg Press",
+                    "Jogging",
+                  ].map((activity, i) => (
+                    <label key={i} className="flex items-center space-x-2">
+                      <input
+                        type="checkbox"
+                        name="activities"
+                        value={activity}
+                        onChange={handleChange}
+                        className="input-field-checkbox"
+                      />
+                      <span>{activity}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <br />
           </section>
         )}
 
@@ -1700,7 +2203,7 @@ function RoboticKneeForm() {
               Previous
             </button>
           )}
-          {currentStep < 5 ? (
+          {currentStep < 6 ? (
             <button
               type="button"
               onClick={handleNext}
